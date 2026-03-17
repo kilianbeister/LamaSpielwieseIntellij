@@ -2,8 +2,13 @@ public class Lama{
     private String tiername;
     private String tierlaut = "Möööht";
 
-    public Lama(){
-        System.out.println("Lama erstellt.");
+    public Lama(String tiername) {
+        this.tiername = tiername;
+    }
+    public Lama(String tiername, String tierlaut){
+        this.tiername = tiername;
+        this.tierlaut = tierlaut;
+        System.out.println("Lama "+ tiername + " erstellt.");
         System.out.println(tierlaut);
     }
 
