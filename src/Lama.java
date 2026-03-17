@@ -1,14 +1,19 @@
 public class Lama{
     private String tiername;
-    private String tierlaut;
+    private String tierlaut = "Möööht;
 
+  
+    public Lama(String tiername) {
+        this.tiername = tiername;
+    }
+   
     public Lama(String tiername, String tierlaut){
         this.tiername = tiername;
         this.tierlaut = tierlaut;
+        System.out.println("Lama "+ tiername + " erstellt.");
+        System.out.println("Es sagt: " + tierlaut);
     }
-    public void test(){
-        System.out.println("Hallo welt");
-    }
+  
     public void ausgebenmuuhlaut(){
         System.out.println("Muuuh");
     }
@@ -27,6 +32,8 @@ public class Lama{
 
     public void setTiername(String tiername) {
         this.tiername = tiername;
-    }
+      
+
+
 
 }
